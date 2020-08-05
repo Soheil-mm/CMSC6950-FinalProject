@@ -6,7 +6,6 @@ RADWave documentation is found at [radwave.readthedocs.io](https://radwave.readt
 RADWave is a python package built to characterise wave conditions based on altimeter data.
 
 ## Installation
----
 ### Dependencies
 You will need Python 3.5+. Also, the following packages are required:
 

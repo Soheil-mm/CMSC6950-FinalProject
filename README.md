@@ -25,3 +25,7 @@ You can install RADWave using the `pip` package manager with your version of Pyt
 ```
 pip install radwave
 ```
+If you encountered an error regarding compiling files whie installing `radwave` using pip. Since you have installed all of the dependencies before, instal `radwave` using this command with `pip` package manager:
+```
+pip install --no-dependencies RADWave
+```

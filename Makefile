@@ -1,3 +1,7 @@
+#Creating report.pdf
+report:	report.tex altimeterdata.png Hseries.png Pseries.png whall_wh_distribution.png whall_wh_heatmap.png wave_location.png annual_value.png Mun_logo.jpg
+	latexmk -pdf
+
 #Seasonal and annual plots
 trends:	IMOSURLs.txt altimeterData.cs
 	python plot_trends.py
@@ -14,7 +18,7 @@ altimeterData:		IMOSURLs.txt altimeterData.csv
 
 clean:	almost_clean
 	rm *.png
-	rm .csv
+	rm *.pdf
 	
 almost_clean:
 	latexmk -c

@@ -11,6 +11,3 @@ wa.readAltimeterData('altimeterData.csv')
 wa.visualiseData(title="Altimeter data tracks", extent=[149.,158.,-38.,-32.], 
                  addcity=['Sydney', 151.2093, -33.8688], markersize=40, zoom=8,
                  fsize=(5, 5), fsave='altimeterdata')
-
-#Creating time series (pandas DF)
-timeseries = wa.generateTimeSeries()

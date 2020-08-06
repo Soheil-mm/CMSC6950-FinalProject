@@ -2,8 +2,6 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\usepackage[a4paper, total={6
-in, 8in}]{geometry}
 \documentclass[12pt]{article}
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
@@ -116,15 +114,66 @@ Based on our data, to perform wave analysis and compute the wave parameters, we 
     \label{fig:fig3}
 \end{figure}
 
+%\begin{figure}[h]
+%    \centering
+%    \includegraphics[width=8 cm]{wave_location.png}
+%    \caption{}
+%    \label{fig:fig4}
+%\end{figure}
+
+\newpage
+
+\subsection{Processing wave seasonal trends}
+in addition to time series, we can analyse the seasonal characteristics of each parameter computed from the altimeter dataset.We used this to draw a heat map of the significant wave heights in each month over the past 25 years (\figureautorefname{5}). And we can see the distribution of this heat-map that can help us better identify which months have higher wave heights (\figureautorefname{6}). 
+
 \begin{figure}[h]
     \centering
-    \includegraphics[width=8 cm]{wave_location.png}
-    \caption{}
-    \label{fig:fig4}
+    \includegraphics[width=10 cm]{whall_wh_heatmap.png}
+    \caption{Heat-map of significant wave heights}
+    \label{fig:fig5}
+\end{figure}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=6.5 cm]{whall_wh_distribution.png}
+    \caption{Heat-map of significant wave heights}
+    \label{fig:fig6}
 \end{figure}
 
 \newpage
 
+\subsection{Annual values for each tile}
+The data we have of the ocean are put in our dataset as a series of tiles that cover the oceans. Each tile has its individual longitude and latitude. We can make annual reports for each tile and based on the mean of their monthly, seasonally or annual activities (\figureautorefname{7}). 
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=12 cm]{annual_value.png}
+    \caption{Heat-map of significant wave heights}
+    \label{fig:fig7}
+\end{figure}
+ Here we can observe that each color represent changes in annual mean value of wave heights for each one of the four tiles that I chose to show.
+ 
+\section{Conclusion}
+Overall, in my opinion RADWave is a very strong package in this field and what we saw here was only a small portion of the  things that can be done using this package. It has a easy to use syntax and a complete documentation to help you with it. It is also should be noted that most of the data available to use are for the regions and oceans near Australia and that can be problematic if you are looking to analyze another part of the world. 
+\newline In this project we observed some figures on the ocean waves and specially the height of the wave over the period of past 25 years and it can give us some ideas regarding which seasons or which years had a calmer ocean surface and which years went to the extremes in the records.
+\newpage
+
+\begin{thebibliography}{9}
+
+    \bibitem{ref1}
+    Courtney Smith and Tristan Salles and Ana Vila-Concejo | RADWave: Python code for ocean surface wave analysis by     satellite radar altimete. Retrieved from Journal of Open Source Software 
+    {\url{https://doi.org/10.21105/joss.02083}
+   
+	\bibitem{ref2}
+	Integrated Marine Observing System (IMOS), Australia
+	{\url{http://imos.org.au/}}
+	
+
+	\bibitem{ref3}
+	Australian Ocean Data Network (AODN), Australia
+	{\url{https://portal.aodn.org.au/}}
+
+
+\end{thebibliography}
 
 \end{document}

@@ -29,3 +29,10 @@ If you encountered an error regarding compiling files whie installing `radwave` 
 ```
 pip install --no-dependencies RADWave
 ```
+## Reproduce Report
+Follow the following steps to reproduce my work:
+* Make sure that all the dependecies and `RADWave` is installed by using `conda` or `pip`
+* clone the repository using `git clone https://github.com/Soheil-mm/CMSC6950-FinalProject`
+* Run `make` to run according the work-flow
+* Run `make almost_clean` to remove extra files
+* Run `make clean` to remove old reports

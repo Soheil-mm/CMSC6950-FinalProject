@@ -1,5 +1,5 @@
 #Creating report.pdf
-report:	report.tex altimeterdata.png Hseries.png Pseries.png whall_wh_heatmap.png whall_wh_distribution.png wave_location.png annual_value.png Mun_logo.jpg
+report:	report.tex altimeterdata.png Hseries.png Pseries.png whall_wh_heatmap.png whall_wh_distribution.png wave_location.png annual_value.png
 	latexmk -pdf $<
 
 #Seasonal and annual plots

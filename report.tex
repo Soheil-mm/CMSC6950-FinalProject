@@ -9,6 +9,13 @@
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage[colorinlistoftodos]{todonotes}
+\usepackage{efbox,graphicx}
+\efboxsetup{linecolor=black,linewidth=1pt}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{caption,float}
+\usepackage[vmargin=3cm,hmargin=3cm]{geometry}
 
 \begin{document}
 
@@ -23,7 +30,7 @@
 %----------------------------------------------------------------------------------------
 
 \textsc{ Memorial University of Newfoundland}\\[1.5cm] % Name of your university/college
-\includegraphics[scale=.1]{MUN_Logo.jpg}\\[1cm] % Include a department/university logo - this will require the graphicx package
+\includegraphics[scale=.1]{images/MUN_Logo.jpg}\\[1cm] % Include a department/university logo - this will require the graphicx package
 \textsc{\Large Computer Based Research Tools and Applications}\\[0.5cm] % Major heading such as course name
 \textsc{\large CMSC6950}\\[0.5cm] % Minor heading such as course title
 
@@ -39,17 +46,9 @@
 %	AUTHOR SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{minipage}{0.5\textwidth}
-\begin{flushleft} \large
-\emph{Author:}\\
-Soheil Mousavi Moghaddam\\ % Your name
-\end{flushleft}
-
-\end{minipage}\\[2cm]
-
 % If you don't want a supervisor, uncomment the two lines below and remove the section above
-%\Large \emph{Author:}\\
-%John \textsc{Smith}\\[3cm] % Your name
+\Large \emph{Author:}\\
+Soheil Mousavi Moghaddam\\[3cm] % Your name
 
 %----------------------------------------------------------------------------------------
 %	DATE SECTION
@@ -61,6 +60,28 @@ Soheil Mousavi Moghaddam\\ % Your name
 
 \end{titlepage}
 
+\newpage
+
+{
+  \section*{Abstract}
+}
+RADWave allows the user to query over a range of spatial and temporal scales altimeter parameters in specific geographical regions and subsequently calculates significant wave heights, periods, group velocities, average wave energy densities and wave energy fluxes. In the following we are going to test some of these features on our dataset \\\\
+
+\section{Our Data}
+\subsection{Introduction}
+The AODN (Australian Ocean Data Network) provides access to all available Australian marine and climate science data and provides the primary access to IMOS (Integrated Marine Observing System) data including access to the IMOS metadata. With the help of this data and by using RADWave module on python, we can make plots to observe wave conditions based on altimeter data for a specific geographical region over a period of time.
+\subsection{The Dataset}
+Our dataset (altimeterData.csv) has 5 columns and 13670 rows. In addition we use a text file (IMOSURLs.txt) which consist of a list of URLs that help us communicate to satellites for our desired time period and geographical region. Below is a description of each column in the altimeterData.csv: 
+
+\begin{itemize}
+
+\item lon: Longitude, is a geographic coordinate that specifies the east–west position of a point on the Earth's surface
+\item lat: Latitude, is a geographic coordinate that specifies the north–south position of a point on the Earth's surface
+\item wh: Wave Height, the height that the wave achieved in meters 
+\item time: Time of the occurrence of the wave
+\item ws: Wave Second, the period that took for the wave to happen in seconds
+
+\end{itemize}
 
 
 \end{document}
